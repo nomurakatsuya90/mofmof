@@ -33,7 +33,7 @@
 
   <div class="field">
     <%= form.label :備考 %>
-    <br><%= form.remarks :note %>
+    <br><%= form.text_area :remarks %>
   </div>
 
 <hr>
@@ -52,6 +52,11 @@
     <% i += 1 %>
   <% end %>
   <div class="actions">
-    <br><%= form.submit '登録する'%>
+    <br>
+    <% if action_name == 'new' %>
+      <%= form.submit '登録する'%>
+    <% else %>
+      <%= form.submit '更新する'%>
+    <% end %>
   </div>
 <% end %>
