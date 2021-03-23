@@ -1,23 +1,23 @@
 require 'test_helper'
 
-class PropertysControllerTest < ActionDispatch::IntegrationTest
+class PropertiesControllerTest < ActionDispatch::IntegrationTest
   test "should get index" do
-    get propertys_index_url
+    get properties_index_url
     assert_response :success
   end
 
   test "should get new" do
-    get propertys_new_url
+    get properties_new_url
     assert_response :success
   end
 
   test "should get edit" do
-    get propertys_edit_url
+    get properties_edit_url
     assert_response :success
   end
 
   test "should get show" do
-    get propertys_show_url
+    get properties_show_url
     assert_response :success
   end
 

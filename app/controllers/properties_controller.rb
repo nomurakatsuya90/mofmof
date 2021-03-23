@@ -1,7 +1,7 @@
-class PropertysController < ApplicationController
+class PropertiesController < ApplicationController
   before_action :set_property, only: [:show, :edit, :update, :destroy]
   def index
-    @propertys = Property.all
+    @properties = Property.all
   end
 
   def new
@@ -46,7 +46,7 @@ class PropertysController < ApplicationController
   def destroy
     @property.destroy
     respond_to do |format|
-      format.html { redirect_to propertys_url, notice: '物件を削除しました' }
+      format.html { redirect_to properties_url, notice: '物件を削除しました' }
       format.json { head :no_content }
     end
   end
